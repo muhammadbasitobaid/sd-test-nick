@@ -38,7 +38,7 @@ A **GraphQL API** for managing employee data, built with **Node.js** and **Expre
 
 1. **Clone the Repository**:
    ```bash
-   git clone 
+   git clone https://github.com/muhammadbasitobaid/sd-test-nick.git
    cd sd-test-nick 
    ```
 
