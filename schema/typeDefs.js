@@ -1,12 +1,14 @@
 const typeDefs = `#graphql
   type Employee {
     id: ID!
+    username: String!   # Added the username field
     name: String!
     age: Int!
     class: String!
     subjects: [String!]!
     attendance: Int
     role: String!
+    password: String!
   }
 
   type Query {
@@ -15,8 +17,8 @@ const typeDefs = `#graphql
   }
 
   type Mutation {
-    addEmployee(name: String!, age: Int!, class: String!, subjects: [String!]!, role: String!): Employee
-    updateEmployee(id: ID!, name: String, age: Int, class: String, subjects: [String], attendance: Int): Employee
+    addEmployee(username: String!, name: String!, age: Int!, class: String!, subjects: [String!]!, role: String!, password: String!): Employee
+    updateEmployee(id: ID!, username: String, name: String, age: Int, class: String, subjects: [String], attendance: Int, role: String): Employee
   }
 `;
 

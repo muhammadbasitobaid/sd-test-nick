@@ -1,4 +1,5 @@
-export {
-    default as Employee 
-}
-from './Employee';
+const Employee = require('./Employee');
+
+module.exports = {
+  Employee,
+};

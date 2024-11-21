@@ -60,3 +60,21 @@ A **GraphQL API** for managing employee data, built with **Node.js** and **Expre
    npm run dev
    ```
    The API will be available at [http://localhost:4000/graphql](http://localhost:4000/graphql).
+
+5. The complete API Documentation will be available at [http://localhost:4000/api-docs](http://localhost:4000/api-docs).
+
+   - **Steps to Get Started:**
+     - First, create an `admin` user on Apollo to start with.
+     - After creating the `admin` user:
+       1. Visit the API docs page at the provided URL.
+       2. Log in as the `admin` user to receive a token in the response.
+       3. Copy the token from the response.
+       4. Click the Swagger's **Authorize** button.
+       5. Paste the token in the authorization field to log in.
+       6. Once authorized, you can test the endpoints directly from the Swagger UI.
+
+   - **Role-Based Permissions:**
+     - Employees can only view users.
+     - Only admins can add new users and update existing users. 
+
+

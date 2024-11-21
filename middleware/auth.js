@@ -8,6 +8,7 @@ module.exports = (roles = []) => {
     try {
       const user = jwt.verify(token, process.env.JWT_SECRET);
       if (roles.length && !roles.includes(user.role)) return res.status(403).send('Forbidden.');
+      // assuming the user contains the role
       req.user = user;
       next();
     } catch (err) {
